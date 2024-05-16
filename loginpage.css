@@ -11,7 +11,7 @@
     --icon-wrapperdark: #535B63;
     --icon-dark : #1E2732;
     --green-container : #28A745;
-    --red-container : #FF3D3D
+    --red-container : #FF3D3D;
 
 }
 
@@ -53,4 +53,12 @@ h2{
 
 h3{
     font-size: 2rem;
+}
+
+.increment{
+    color: var(--green-container);
+}
+
+.decrement {
+    color: var(--red-container);
 }
