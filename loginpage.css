@@ -7,11 +7,12 @@
     --primary-color :#000000;
     --secondary-color : #888E98;
     --icon-primary : #424957;
-    --icon-wrapperlight : #E8ECF1;
-    --icon-wrapperdark: #535B63;
+    --icon-wrapperlight :#86898A;
+    --icon-wrapperdark: #E4E8EE;
     --icon-dark : #1E2732;
     --green-container : #28A745;
     --red-container : #FF3D3D;
+    --sidebar-light : #0D1216;
 
 }
 
@@ -61,4 +62,34 @@ h3{
 
 .decrement {
     color: var(--red-container);
+}
+
+/*CONTAINERS*/
+.wrapper{
+    border-radius: 15px;
+    font-weight: 500;
+    padding: 0.7rem 2rem;
+    color: #fff;
+}
+
+.greenContainer{
+background-color: var(--green-container);
+}
+
+.redcontainer{
+    background-color: var(--red-container);
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.iconwrapper{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+background-color: var(--icon-wrapperlight);
+padding: 1.5rem;
 }
