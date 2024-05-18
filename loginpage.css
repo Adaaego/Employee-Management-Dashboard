@@ -38,6 +38,7 @@ html{
 body{
     font-size: 1.44rem;
     font-family: "Public Sans", sans-serif;
+    display: flex;
 }
 
 h1,h2,h3{
@@ -123,7 +124,7 @@ padding: 1.5rem;
     display: flex;
     justify-content: center;
 }
-#noofopentasks{
+#noofopentasks, .noofcloedtasks{
     margin-top: 0;
    
 
@@ -162,7 +163,7 @@ padding: 1.5rem;
     fill: var(--green-container);
     margin-bottom: 17px;
 }
-#taskprcentage{
+#taskprcentage, #closedtaskprcentage{
     color: var(--green-container);
     margin-top: 0;
     margin-bottom: 17px;
@@ -179,4 +180,8 @@ font-weight: 500;
 .timedetails{
     margin: 5px 2px 21px 0;
    
+}
+
+.minicard--ii .close{
+    width: 40px;
 }
