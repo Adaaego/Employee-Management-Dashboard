@@ -100,16 +100,20 @@ padding: 1.5rem;
 .iconwrapper--light{
     background-color: var(--icon-wrapperlight);
 }
+/*CARDS*/
+
 .card{
-    border: 1px solid var(--icon-wrapperlight);
+    border: 3px solid var(--icon-wrapperlight);
     box-shadow: 0 0 20px 10px #f3f3f3;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 1.4rem;
+    transition: all ease 0.7s;
+    cursor: pointer;
+}
+.card--small{
+    width: 16%;
     display: flex;
     justify-content: space-between;
-    padding: 1.4rem;
-    width: 16%;
-    height: 120px;
-    transition: all ease 0.7s;
 }
 .card:hover{
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
@@ -184,4 +188,108 @@ font-weight: 500;
 
 .minicard--ii .close{
     width: 40px;
+}
+
+
+/*MEDIUM CARDS*/
+
+.headingcontainer{
+    display: flex;
+    border-bottom: 1px solid var(--icon-wrapperlight);
+}
+.headingcontainer .inline-container{
+    margin-left: 60px;
+}
+.headingcontainer .heading{
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.inline-container .circleicon{
+    margin: 20px 5px 20px 30px;
+    width: 15px;
+}
+
+.starbucks, .photoshop{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+.photoshop{
+    border: 2px solid #3FC3FF;
+
+    border-radius: 50px;
+}
+.card--medium{
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do-detail{
+    display: flex;
+}
+.to-do-subject, .ongoing-task-subject{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.to-do-date .ongoing-task-date{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.progressbar, .taskprogressbar{
+   
+    height: 3px;
+    background-color: var(--green-container);
+    border-radius: 25px;
+    margin: 10px 0 0 7px;
+}
+.to-do-progressbar{
+width: 40%;
+}
+.taskprogressbar{
+    width: 15%;
+}
+
+.progresspercentage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag{
+    margin-left: 7px;
+}
+
+.to-do-percentage{
+    margin-right: 20px;
+}
+
+/*AVATARS*/
+.avatarcontainer{
+margin-left: 7px;
+position: relative;
+}
+.pfp{
+    width: 30px;
+}
+.avatar--ii{
+ position: absolute;
+ left: 8px;
+
+}
+
+.avatar--iii{
+    position: absolute;
+    left: 20px;
+}
+
+.avatar--iv{
+    position: absolute;
+    left: 27px;
+}
+
+.avatarcontainer .circleicon{
+    margin-left: 40px;
 }

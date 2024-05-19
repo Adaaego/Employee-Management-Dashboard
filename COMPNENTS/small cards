@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginpage.css">
-    <title>Document</title>
-</head>
-<body>
-  
-
-   <div class="card" style="margin-left: 15px; margin-top: 30px">
+<div class="card card--small" style="margin-left: 15px; margin-top: 30px">
     <div class="minicard--i">
         <h3 class="heading">Open Tasks</h3>
         <div class="details">
@@ -32,7 +21,7 @@
    </div>
    </div>
    
-   <div class="card" style="margin-left: 25px; margin-top: 30px">
+   <div class="card card--small" style="margin-left: 25px; margin-top: 30px">
     <div class="minicard--i">
         <h3 class="heading">Time Remaining</h3>
         <div class="details">
@@ -51,7 +40,8 @@
     </div>
    </div>
 
-   <div class="card" style="margin-left: 25px; margin-top: 30px">
+
+   <div class="card card--small" style="margin-left: 25px; margin-top: 30px">
     <div class="minicard--i">
         <h3 class="heading">Closed Tasks</h3>
         <div class="details">
@@ -75,7 +65,9 @@
     </div>
 </div>
 
-<div class="card" style="margin-left: 25px; margin-top: 30px">
+
+
+<div class="card  card--small" style="margin-left: 25px; margin-top: 30px">
     <div class="minicard--i">
         <h3 class="heading">Time Spent</h3>
         <div class="details">
@@ -93,10 +85,3 @@
         </span>
     </div>
    </div>
-</body>
-</html>
-
-
-
-
-
