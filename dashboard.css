@@ -395,4 +395,11 @@ margin-bottom: 20px;
     .dateElement{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .dateElement p{
+        font-weight: 600;
+        font-size: 1.7rem;
     }
