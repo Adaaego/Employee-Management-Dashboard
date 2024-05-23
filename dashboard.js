@@ -9,7 +9,7 @@ let greeting;
 if(currentHour < 12){
     greeting = 'Good Morning';
 }
-else if(greeting < 18){
+else if(currentHour < 18){
     greeting = 'Good Afternoon';
 }
 else {
