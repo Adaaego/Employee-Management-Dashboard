@@ -6,6 +6,7 @@
     --bg-color : #fff;
     --primary-color :#000000;
     --secondary-color : #888E98;
+    --light-color : #9FA0B5;
     --icon-primary : #424957;
     --icon-wrapperdark :#606872;
     --icon-wrapperlight: #E7EBF0;
@@ -20,6 +21,7 @@
     --bg-color : #131415;
     --primary-color : #fff;
     --secondary-color : #585A5B;
+    --light-color : #fff;
     --icon-primary : #fff;
     --icon-dark : #fff;
     --icon-wrapperdark : #282A2D;
@@ -80,7 +82,9 @@ background-color: var(--green-container);
 .redcontainer{
     background-color: var(--red-container);
 }
-
+.lightcontainer{
+  background-color: var(--icon-wrapperlight) ;
+}
 .icon{
     width: 25px;
     height: 25px;
@@ -253,6 +257,7 @@ width: 40%;
     width: 15%;
 }
 
+
 .progresspercentage{
     display: flex;
     justify-content: space-between;
@@ -293,3 +298,101 @@ position: relative;
 .avatarcontainer .circleicon{
     margin-left: 40px;
 }
+
+/*PROJECT CARDS*/
+
+.heading-container{
+    display: flex;
+}
+.heading-container .inline-container{
+    margin-left: 210px;
+}
+.heading-container .icon{
+    width: 15px;
+    margin-right: 7px;
+}
+
+.web-application-progressbar{
+    width: 50%;
+    background-color: var(--red-container);
+}
+
+.Logo-design-progressbar{
+    width: 20%;
+    background-color: var(--green-container);
+}
+.web-application-progresspercentage{
+    display: flex;
+}
+
+.web-application-progresspercentage .web-application-progressbar{
+    margin: 24px 0 0 15px;
+}
+
+.web-application-progresspercentage .Logo-design-progressbar{
+    margin: 24px 0 0 15px;
+}
+
+
+.web-application-progresspercentage .web-application-percentage{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.project-status{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-status .lightcontainer{
+    color: var(--light-color);
+}
+.project--name{
+    margin-bottom: 10px;
+    margin-left: 7px;
+}
+.update--date{
+    margin-top: 0;
+    margin-left: 7px;
+}
+
+.profilephoto{
+    width: 20px;
+}
+
+.project-status{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.avatar--container{
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+}
+
+    .pfp--ii{
+        position: absolute;
+        left: 7px;
+    }
+
+    .pfp--iii{
+        position: absolute;
+        left: 15px;
+    }
+    .pfp--iv{
+        position: absolute;
+        left: 25px;
+    }
+
+
+    .dateElement{
+        display: flex;
+        justify-content: space-between;
+    }

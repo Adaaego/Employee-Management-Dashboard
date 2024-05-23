@@ -1,0 +1,76 @@
+<div class="card">
+    <div class="heading-container">
+        <div>
+            <h3 class="project--name">Web Application</h3>
+            <p class="update--date">Last updated : Yesterday 10:15am</p>
+        </div>
+        <span class="inline-container">
+            <svg class="icon">
+                <use xlink:href="images/sprite (9).svg#chat"></use>
+              </svg>
+              <p>25</p>
+        </span>
+     </div>
+
+    <div class="web-application-progresspercentage">
+        <p class="tag">Progress</p>
+        <div class="progressbar web-application-progressbar"></div>
+        <p class="web-application-percentage">80%</p>
+    </div>
+
+
+    <div class="project-status">
+        <div>
+            <span class="wrapper redcontainer">overdue</span>
+            <span class="deadline wrapper lightcontainer">Ended : June 15, 2024</span>
+        </div>
+    
+        <div class="avatar--container">
+            <img src="images/man__1_-removebg-preview.png" class="profilephoto">
+            <img src="images/boy-removebg-preview.png"class="profilephoto pfp--ii">
+            <img src="images/woman__1_-removebg-preview.png" class="profilephoto pfp--iii">
+            <img src="images/woman__2_-removebg-preview.png"class="profilephoto pfp--iv">
+        </div>
+    
+        </div>
+    
+</div>
+
+
+<div class="card" style="margin-left: 20px;">
+    <div class="heading-container">
+        <div>
+            <h3 class="project--name">Logo Design</h3>
+            <p class="update--date">Last updated : Yesterday 10:15am</p>
+        </div>
+        <span class="inline-container">
+            <svg class="icon">
+                <use xlink:href="images/sprite (9).svg#chat"></use>
+              </svg>
+              <p>85</p>
+        </span>
+     </div>
+
+    <div class="web-application-progresspercentage">
+        <p class="tag">Progress</p>
+        <div class="progressbar Logo-design-progressbar"></div>
+        <p class="web-application-percentage">40%</p>
+    </div>
+
+
+    <div class="project-status">
+        <div>
+            <span class="wrapper greenContainer">Completed</span>
+            <span class="deadline wrapper lightcontainer">Ended : April 23, 2024</span>
+        </div>
+    
+        <div class="avatar--container">
+            <img src="images/man__1_-removebg-preview.png" class="profilephoto">
+            <img src="images/boy-removebg-preview.png"class="profilephoto pfp--ii">
+            <img src="images/woman__1_-removebg-preview.png" class="profilephoto pfp--iii">
+            <img src="images/woman__2_-removebg-preview.png"class="profilephoto pfp--iv">
+        </div>
+    
+        </div>
+    
+</div>
