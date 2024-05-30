@@ -17,7 +17,7 @@
 
 }
 
-.darkmode{
+.darkMode{
     --bg-color : #131415;
     --primary-color : #fff;
     --secondary-color : #585A5B;
@@ -41,6 +41,7 @@ body{
     font-size: 1.44rem;
     font-family: "Public Sans", sans-serif;
     display: flex;
+    background-color: var(--bg-color);
 }
 
 h1,h2,h3{

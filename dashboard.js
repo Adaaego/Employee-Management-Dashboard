@@ -60,5 +60,16 @@ calculateProgress(16, 205, 'webDesignProject', 'webDesignPercentage' );
 calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 
-// let pj1= calculateProgress(5000,12345);
-// console.log(pj1);
+function changeTheme(){
+    let sunIcon = document.getElementById('sunicon');
+
+    document.body.classList.toggle('darkMode');
+    if (document.body.classList.contains('darkMode')){
+        sunIcon.src = 'sprite (10).svg#moon (1)';
+
+    }
+    else{
+        sunIcon.src = 'sprite (10).svg#sun (1)';
+    }
+
+}
