@@ -243,12 +243,16 @@ font-weight: 500;
     opacity: 0.5;
 }
 
-.progressbar, .taskprogressbar{
-   
+.progress-bar{
     height: 3px;
-    background-color: var(--green-container);
     border-radius: 25px;
     margin: 10px 0 0 7px;
+}
+.green-progressBar{
+    background-color: var(--green-container);
+}
+.red-progressBar{
+    background-color: var(--red-container);
 }
 .to-do-progressbar{
 width: 40%;
@@ -314,7 +318,7 @@ position: relative;
 
 .web-application-progressbar{
     width: 50%;
-    background-color: var(--red-container);
+
 }
 
 .Logo-design-progressbar{

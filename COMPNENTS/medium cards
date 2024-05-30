@@ -18,10 +18,10 @@
             </div>
         </div>
         <div class="progressdetails">
-            <div class="progressbar to-do-progressbar"></div>
+            <div class="progress-bar to-do-progressbar green-progressBar" id="starbucksPercentage"></div>
             <div class="progresspercentage">
                 <p class="tag">progress</p>
-                <p class="to-do-percentage">40%</p>
+                <p class=" project-percentage  to-do-percentage" id="starbucksProject">40%</p>
             </div>
         </div>
 
@@ -57,10 +57,10 @@
             </div>
         </div>
         <div class="progressdetails">
-            <div class="taskprogressbar"></div>
+            <div class="progress-bar green-progressBar" id="webDesignPercentage"></div>
             <div class="progresspercentage">
                 <p class="tag">progress</p>
-                <p class="to-do-percentage">25%</p>
+                <p class="project-percentage   to-do-percentage" id="webDesignProject">25%</p>
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" style="margin-left: 20px;">
     <div class="heading-container">
         <div>
             <h3 class="project--name">Web Application</h3>
@@ -14,8 +14,8 @@
 
     <div class="web-application-progresspercentage">
         <p class="tag">Progress</p>
-        <div class="progressbar web-application-progressbar"></div>
-        <p class="web-application-percentage">80%</p>
+        <div class="progress-bar  web-application-progressbar red-progressBar" id="webApplicationPercentage"></div>
+        <p class="project-percentage web-application-percentage" id="webApplicationProject">80%</p>
     </div>
 
 
@@ -53,8 +53,8 @@
 
     <div class="web-application-progresspercentage">
         <p class="tag">Progress</p>
-        <div class="progressbar Logo-design-progressbar"></div>
-        <p class="web-application-percentage">40%</p>
+        <div class="progress-bar Logo-design-progressbar green-progressBar" id="logoDesignPercentage"></div>
+        <p class="project-percentage  web-application-percentage" id="logoDesignProject">40%</p>
     </div>
 
 
