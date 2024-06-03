@@ -1,5 +1,5 @@
 window.onload = function () {
-    const greetingElement = document.getElementById('greeting');
+    const greetingElement = document.getElementById ('greeting');
 
     const currentTime = new Date();
     const currentHour = currentTime.getHours()
@@ -20,7 +20,7 @@ window.onload = function () {
     greetingElement.innerHTML = `${greeting}, ${username}`
 
 
-}
+};
 
 function calculateProgress(actual, target, projectId, progressBarId) {
     const percentage = Math.round((actual / target) * 100);
@@ -61,15 +61,14 @@ calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 
 function changeTheme(){
-    let sunIcon = document.getElementById('sunicon');
+    let sunIcon = document.getElementById('sunicon').querySelector('use');
 
     document.body.classList.toggle('darkMode');
     if (document.body.classList.contains('darkMode')){
-        sunIcon.src = 'sprite (10).svg#moon (1)';
-
+        sunIcon.setAttribute('href', 'images/sprite (10).svg#moon (1)');
     }
     else{
-        sunIcon.src = 'sprite (10).svg#sun (1)';
+        sunIcon.setAttribute('href', 'images/sprite (10).svg#sun (1)');
     }
 
 }

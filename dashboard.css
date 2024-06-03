@@ -14,17 +14,21 @@
     --green-container : #28A745;
     --red-container : #FF3D3D;
     --sidebar-light : #0D1216;
+    --icon-light : #000;
+    --card-light : #fff;
 
 }
 
 .darkMode{
-    --bg-color : #131415;
+    --bg-color : #22272E;
     --primary-color : #fff;
     --secondary-color : #585A5B;
     --light-color : #fff;
     --icon-primary : #fff;
     --icon-dark : #fff;
     --icon-wrapperdark : #282A2D;
+    --icon-light : #fff;
+    --card-light : #1A1B1E;
 }
 
 *, *::before, *::after{
@@ -41,6 +45,7 @@ body{
     font-size: 1.44rem;
     font-family: "Public Sans", sans-serif;
     display: flex;
+    color: var(--primary-color);
     background-color: var(--bg-color);
 }
 
@@ -89,7 +94,7 @@ background-color: var(--green-container);
 .icon{
     width: 25px;
     height: 25px;
-    fill: #000;
+    fill: var(--icon-light);
 }
 
 .iconwrapper{
@@ -114,6 +119,7 @@ padding: 1.5rem;
     padding: 1.4rem;
     transition: all ease 0.7s;
     cursor: pointer;
+    background-color: var(--card-light);
 }
 .card--small{
     width: 16%;
