@@ -4,31 +4,34 @@
 /*COLOR PALLETTE */
 :root{
     --bg-color : #fff;
-    --primary-color :#000000;
-    --secondary-color : #888E98;
-    --light-color : #9FA0B5;
-    --icon-primary : #424957;
-    --icon-wrapperdark :#606872;
-    --icon-wrapperlight: #E7EBF0;
-    --icon-dark : #1E2732;
+    --box-shadow :  0 0 20px 10px #f3f3f3;
+    --card-color : #fff;
     --green-container : #28A745;
-    --red-container : #FF3D3D;
-    --sidebar-light : #0D1216;
+    --icon-dark : #1E2732;
     --icon-light : #000;
-    --card-light : #fff;
+    --icon-primary : #424957;
+    --icon-wrapper-light: #E7EBF0;
+    --icon-wrapperdark :#606872;
+    --light-color : #9FA0B5;
+    --primary-color :#000000;
+    --red-container : #FF3D3D;
+    --secondary-color : #888E98;
+    --sidebar-light : #0D1216;
 
 }
 
 .darkMode{
-    --bg-color : #22272E;
+    --bg-color :#131415;
+    --box-shadow : none;
+    --card-color : #282A2D;
+    --icon-dark : #fff;
+    --icon-light : #fff;
+    --icon-primary : #fff;
+    --icon-wrapper-light : #DD4D84;
+    --icon-wrapperdark : #282A2D;
+    --light-color : #fff;
     --primary-color : #fff;
     --secondary-color : #585A5B;
-    --light-color : #fff;
-    --icon-primary : #fff;
-    --icon-dark : #fff;
-    --icon-wrapperdark : #282A2D;
-    --icon-light : #fff;
-    --card-light : #1A1B1E;
 }
 
 *, *::before, *::after{
@@ -89,8 +92,11 @@ background-color: var(--green-container);
     background-color: var(--red-container);
 }
 .lightcontainer{
-  background-color: var(--icon-wrapperlight) ;
+  background-color: var(--icon-wrapper-light) ;
 }
+
+
+
 .icon{
     width: 25px;
     height: 25px;
@@ -114,12 +120,12 @@ padding: 1.5rem;
 
 .card{
     border: 3px solid var(--icon-wrapperlight);
-    box-shadow: 0 0 20px 10px #f3f3f3;
+    box-shadow: var(--box-shadow);
     border-radius: 25px;
     padding: 1.4rem;
     transition: all ease 0.7s;
     cursor: pointer;
-    background-color: var(--card-light);
+    background-color: var(--card-color);
 }
 .card--small{
     width: 16%;
@@ -129,6 +135,11 @@ padding: 1.5rem;
 .card:hover{
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
     transform: scale(1.05);
+}
+
+
+.darkMode .card:hover {
+    background-color: #3C426B;
 }
 .heading{
     margin-bottom: 20px;

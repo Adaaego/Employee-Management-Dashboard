@@ -62,10 +62,12 @@ calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 
 function changeTheme(){
     let sunIcon = document.getElementById('sunicon').querySelector('use');
+    const card = document.getElementById('card');
 
     document.body.classList.toggle('darkMode');
     if (document.body.classList.contains('darkMode')){
         sunIcon.setAttribute('href', 'images/sprite (10).svg#moon (1)');
+        
     }
     else{
         sunIcon.setAttribute('href', 'images/sprite (10).svg#sun (1)');
