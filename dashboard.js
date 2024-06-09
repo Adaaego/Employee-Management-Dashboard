@@ -1,8 +1,8 @@
 window.onload = function () {
     const greetingElement = document.getElementById ('greeting');
 
-    const currentTime = new Date();
-    const currentHour = currentTime.getHours()
+    const currentTime = new Date(); // to get the current date and time 
+    const currentHour = currentTime.getHours() // to get the current hour *24-hour clock
 
     let greeting;
 
@@ -51,7 +51,7 @@ function calculateProgress(actual, target, projectId, progressBarId) {
             progressBarElement.style.backgroundColor = colorGreen;
         }
     }
-}
+};
 
 document.addEventListener('DOMContentLoaded',() => {
 calculateProgress(122053,225000, 'starbucksProject', 'starbucksPercentage');
@@ -60,14 +60,15 @@ calculateProgress(16, 205, 'webDesignProject', 'webDesignPercentage' );
 calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 
+
+
 function changeTheme(){
     let sunIcon = document.getElementById('sunicon').querySelector('use');
-    const card = document.getElementById('card');
 
     document.body.classList.toggle('darkMode');
     if (document.body.classList.contains('darkMode')){
         sunIcon.setAttribute('href', 'images/sprite (10).svg#moon (1)');
-        
+
     }
     else{
         sunIcon.setAttribute('href', 'images/sprite (10).svg#sun (1)');

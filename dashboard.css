@@ -17,6 +17,7 @@
     --red-container : #FF3D3D;
     --secondary-color : #888E98;
     --sidebar-light : #0D1216;
+    --wrapper-text : #9192A8;
 
 }
 
@@ -32,6 +33,7 @@
     --light-color : #fff;
     --primary-color : #fff;
     --secondary-color : #585A5B;
+    --wrapper-text : #fff;
 }
 
 *, *::before, *::after{
@@ -81,7 +83,7 @@ h3{
     border-radius: 15px;
     font-weight: 500;
     padding: 0.7rem 2rem;
-    color: #fff;
+    color: var(--wrapper-text);
 }
 
 .greenContainer{
@@ -424,4 +426,60 @@ margin-bottom: 20px;
     .dateElement p{
         font-weight: 600;
         font-size: 1.7rem;
+    }
+
+    /*RECENT PROJECT CARDS */
+
+    .heading-Container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heading-Container h3{
+        flex: 1;
+    }
+    .heading-Container .icon{
+        margin-top: 17px;
+    }
+
+    .spotify{
+        width: 50px;
+        height: 50px;
+        margin-top: 16px;
+    }
+
+    .project-detailsContainer{
+        display: flex;
+        margin-top: 10px;
+    }
+    .project-details{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .project-detailsContainer .wrapper{
+        height: 30px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: 25px;
+    }
+
+    .company-name{
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+
+    .project-name{
+        margin-top: 0;
+        margin-bottom: 2px;
+        font-weight: 600;
+    }
+
+    .company-slogan{
+        margin-top: 0;
+        font-weight: 500;
+        opacity: 0.7;
     }
