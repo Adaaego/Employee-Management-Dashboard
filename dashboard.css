@@ -18,6 +18,7 @@
     --secondary-color : #888E98;
     --sidebar-light : #0D1216;
     --wrapper-text : #9192A8;
+    --border-bottom: 1px solid #E7EBF0;
 
 }
 
@@ -219,7 +220,7 @@ font-weight: 500;
 
 .headingcontainer{
     display: flex;
-    border-bottom: 1px solid var(--icon-wrapperlight);
+    border-bottom: var(--border-bottom);
 }
 .headingcontainer .inline-container{
     margin-left: 60px;
@@ -234,7 +235,7 @@ font-weight: 500;
     width: 15px;
 }
 
-.starbucks, .photoshop{
+.starbucks, .photoshop, .project-icon{
     width: 40px;
     height: 40px;
     margin-top: 15px;
@@ -243,6 +244,13 @@ font-weight: 500;
     border: 2px solid #3FC3FF;
 
     border-radius: 50px;
+}
+.project-icon{
+    border-radius: 50%;
+}
+
+.xd{
+    border: 3px solid #E843D8;
 }
 .card--medium{
     display: flex;
@@ -483,3 +491,86 @@ margin-bottom: 20px;
         font-weight: 500;
         opacity: 0.7;
     }
+
+
+    /*RECENT PROJECTS CARD*/
+
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: var(--border-bottom);
+    }
+    
+    .card-header > div:nth-child(2){
+        margin-left: 40px;
+    }
+    .card-header .icon{
+        margin-top: 20px;
+     
+    }
+
+    .card-content{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: var(--border-bottom);
+    }
+
+    .project-info{
+        display: flex;
+        flex: 1;
+    }
+    
+    .project-info .xd{
+        margin-bottom: 5px;
+    }
+    .content-projectName{
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 25px;
+        margin-left: 7px;
+    }
+    .content-avatarContainer{
+        display: flex;
+        margin-left: 30px;
+    }
+    .content-avatarInfo{
+        margin-left: 15px;
+        position: relative;
+        margin-top: 25px;
+    }
+    .content-avatarInfo .pfp--ii{
+        position: absolute;
+        left: 7px;
+    }
+    
+    .content-avatarInfo .pfp--iii{
+        position: absolute;
+        left: 15px;
+    }
+    
+    .content-avatarInfo .pfp--iv{
+        position: absolute;
+        left: 22px;
+    }
+
+    .content-avatarContainer .circleicon{
+        margin-left: 30px;
+        margin-top: 25px;
+        width: 20px;
+        height: 20px;
+    }
+    .deadline-status{
+        display: flex;
+    }
+
+    .deadline-status .wrapper{
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 40px;
+
+    }
+    .deadline-status .icon{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
