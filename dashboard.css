@@ -10,6 +10,7 @@
     --icon-dark : #1E2732;
     --icon-light : #000;
     --icon-primary : #424957;
+    --icon-sidebar : #606A79;
     --icon-wrapper-light: #E7EBF0;
     --icon-wrapperdark :#606872;
     --light-color : #9FA0B5;
@@ -129,6 +130,10 @@ padding: 1.5rem;
     transition: all ease 0.7s;
     cursor: pointer;
     background-color: var(--card-color);
+}
+
+.side-barWrapper{
+    
 }
 .card--small{
     width: 16%;
@@ -574,3 +579,81 @@ margin-bottom: 20px;
         margin-left: 10px;
     }
     
+
+    /*SIDE-BAR*/
+
+    .companyLogo{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: var(--sidebar-light);
+        border-top-left-radius: 15px;
+        height: 100vh;
+        
+    }
+    .side-bar .icon{
+        width: 25px;
+        height: 25px;
+        fill: var(--icon-sidebar);
+
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .side-barContainer--i{
+        text-align: center;
+        flex: 1;
+        padding: 0.7rem 1rem;
+        flex-shrink: 1;
+    }
+    .side-barContainer--i .icon{
+        margin-bottom: 35px;
+    }
+    .side-barContainer--ii{
+        border-top: 1px solid #1E2327;
+        padding: 0.7rem 1rem;
+        flex-shrink: 1;
+    }
+    .side-barContainer--ii .icon{
+       margin-bottom: 15px;
+       margin-top: 15px;
+       flex-shrink: 1;
+    }
+
+    .log-outContainer{
+        background-color: #FF3333;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        padding: 0.5rem 1rem;
+        flex-shrink: 1;
+    }
+
+    .log-outContainer .icon{
+        fill: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .mini--container{
+        display: flex;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    
+    
+   

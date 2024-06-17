@@ -7,6 +7,7 @@
     --secondary-color : #888E98;
     --light-color : #9FA0B5;
     --icon-primary : #424957;
+    --icon-sidebar : #606A79;
     --icon-wrapperdark :#606872;
     --icon-wrapperlight: #E7EBF0;
     --icon-dark : #1E2732;
@@ -145,4 +146,66 @@ background-color: var(--green-container);
 }
 .content-avatarContainer .profilephoto{
     margin-top: 10px;
+}
+
+
+
+.companyLogo{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.side-barContainer--i{
+    text-align: center;
+}
+.side-barContainer--i .icon{
+    width: 70px;
+    height: 30px;
+    fill: var(--icon-sidebar);
+    margin-bottom: 35px;
+}
+
+
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--sidebar-light);
+    padding: 0.7rem 1rem;
+    border-top-left-radius: 15px;
+}
+
+.side-bar .icon{
+    width: 25px;
+    height: 25px;
+    fill: var(--icon-sidebar);
+
+}
+
+
+.log-outContainer{
+    background-color: #FF3333;
+    display: inline-flex;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.log-outContainer .icon{
+    fill: #fff;
 }
