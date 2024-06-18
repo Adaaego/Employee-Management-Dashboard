@@ -16,7 +16,7 @@
    <div class="minicard--ii">
        <span class="iconwrapper iconwrapper--light">
        </svg><svg class="icon">
-        <use xlink:href="images/sprite (5).svg#verified"></use>
+        <use xlink:href="images/sprite (5).svg#verified"></use></svg>
        </span>
    </div>
    </div>

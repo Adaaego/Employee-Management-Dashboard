@@ -209,3 +209,17 @@ background-color: var(--green-container);
 .log-outContainer .icon{
     fill: #fff;
 }
+
+
+
+/*TABLE*/
+
+.T-header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ th, td{
+    padding: 1.5rem;
+}
+
