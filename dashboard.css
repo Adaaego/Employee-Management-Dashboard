@@ -138,7 +138,7 @@ padding: 1.5rem;
 }
 
 .iconWrapper--light{
-    background-color: var(--icon-wrapper-light);S
+    background-color: var(--icon-wrapper-light);
 }
 
 /*CARDS*/
@@ -163,6 +163,11 @@ padding: 1.5rem;
     transform: scale(1.05);
 }
 
+@media screen and (max-width:768px){
+    .card:hover{
+        transform: scale(1.01);
+    }
+}
 
 .darkMode .card:hover {
     background-color: #3C426B;
@@ -273,23 +278,35 @@ padding: 1.5rem;
 
 /*MEDIUM CARDS*/
 
-.headingcontainer{
+.headingContainer{
     display: flex;
     border-bottom: var(--border-bottom);
 }
-.headingcontainer .inline-container{
+.headingContainer .inline-container{
     margin-left: 60px;
 }
-.headingcontainer .heading{
+.headingContainer .heading{
     margin-right: 40px;
     margin-bottom: 0;
     margin-top: 20px;
+    flex: 1;
 }
 .inline-container .circleicon{
     margin: 20px 5px 20px 30px;
     width: 15px;
 }
+@media screen and (max-width: 767px){
+    .inline-container p {
+        text-wrap: nowrap;
+    }
 
+    .headingContainer .heading{
+        margin-top: 25px;
+        font-size: 2rem;
+        margin-right: 15px;
+
+    }
+}
 .starbucks, .photoshop, .project-icon{
     width: 40px;
     height: 40px;
@@ -386,14 +403,18 @@ position: relative;
     margin-left: 40px;
 }
 
+@media screen and (max-width:767px){
+     .pfp{
+        width: ;
+     }
+}
+
 /*PROJECT CARDS*/
 
 .heading-container{
     display: flex;
 }
-.heading-container .inline-container{
-    margin-left: 210px;
-}
+
 .heading-container .icon{
     width: 15px;
     margin-right: 7px;
