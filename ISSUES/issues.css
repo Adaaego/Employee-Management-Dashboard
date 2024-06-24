@@ -22,6 +22,8 @@
     box-sizing: border-box;
 }
 
+
+
 /*TYPOGRAPHY*/
 
 html{
@@ -37,6 +39,11 @@ body{
 h1,h2,h3{
     color: var(--primary-color);
 }
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
 
 .card{
     border: 3px solid var(--icon-wrapperlight);
@@ -58,6 +65,25 @@ h1,h2,h3{
     flex-direction: column;
 }
 
+.card--small{
+    display: flex;
+    justify-content: space-between;
+}
+
+.details{
+    display: flex;
+    justify-content: flex-start;
+}
+.miniCard--ii  .icon{
+width: 70px;
+height: 70px;
+margin-top: 30px;
+    margin-left: 40px;
+
+}
+.miniCard--ii{
+    margin-left: 40px;
+}
 .circleicon{
     width: 35px;
     height: 20px;
@@ -163,10 +189,7 @@ background-color: var(--green-container);
     height: 100vh;
 }
 
-.icon{
-    width: 30px;
-    height: 30px;
-}
+
 
 .side-barContainer--i{
     text-align: center;

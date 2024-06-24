@@ -12,7 +12,7 @@
     --icon-primary : #424957;
     --icon-sidebar : #606A79;
     --icon-wrapper-light: #E7EBF0;
-    --icon-wrapperdark :#606872;
+    --icon-wrapperDark :#606872;
     --light-color : #9FA0B5;
     --primary-color :#000000;
     --red-container : #FF3D3D;
@@ -31,7 +31,7 @@
     --icon-light : #fff;
     --icon-primary : #fff;
     --icon-wrapper-light : #DD4D84;
-    --icon-wrapperdark : #282A2D;
+    --icon-wrapperDark : #282A2D;
     --light-color : #fff;
     --primary-color : #fff;
     --secondary-color : #585A5B;
@@ -71,6 +71,15 @@ h3{
     font-size: 2rem;
 }
 
+/*MEDIA QUERIES FOR TYPOGRAPHY*/
+
+/*EXTRA SMALL DEVICES*/
+@media screen and (max-width:576px){
+    h3{
+        font-size: 1.4rem;
+    }
+}
+
 .increment{
     color: var(--green-container);
 }
@@ -94,11 +103,12 @@ background-color: var(--green-container);
 .redcontainer{
     background-color: var(--red-container);
 }
-.lightcontainer{
+.light-container{
   background-color: var(--icon-wrapper-light) ;
 }
 
 
+/*ICONS*/
 
 .icon{
     width: 25px;
@@ -106,39 +116,48 @@ background-color: var(--green-container);
     fill: var(--icon-light);
 }
 
-.iconwrapper{
+@media screen and (max-width:576px){
+
+    .icon{
+        width: 17px;
+        height: 17px;
+    }
+}
+
+
+.iconWrapper{
 display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 5px;
 padding: 1.5rem;
 }
-.iconwrapper--dark{
-    background-color: var(--icon-wrapperdark);
+
+.iconWrapper--dark{
+    background-color: var(--icon-wrapperDark);
 }
-.iconwrapper--light{
-    background-color: var(--icon-wrapperlight);
+
+.iconWrapper--light{
+    background-color: var(--icon-wrapper-light);S
 }
+
 /*CARDS*/
 
 .card{
-    border: 3px solid var(--icon-wrapperlight);
+    border: 3px solid var(--icon-wrapper-light);
     box-shadow: var(--box-shadow);
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 1.4rem;
     transition: all ease 0.7s;
     cursor: pointer;
     background-color: var(--card-color);
 }
 
-.side-barWrapper{
-    
-}
 .card--small{
-    width: 16%;
     display: flex;
     justify-content: space-between;
 }
+
 .card:hover{
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
     transform: scale(1.05);
@@ -148,47 +167,83 @@ padding: 1.5rem;
 .darkMode .card:hover {
     background-color: #3C426B;
 }
+
 .heading{
     margin-bottom: 20px;
     margin-top: 10px;
     text-wrap: nowrap;
 }
+
+@media screen and (max-width:576px){
+    .heading{
+        margin-bottom: 10px;
+    }
+}
+
 .details{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+   
 }
-#noofopentasks, .noofcloedtasks{
+
+.time-details{
+    margin: 5px 0 21px 0;
+   
+}
+
+#unit-of-time{
+    margin-right: 60px; 
+    margin-left: 0;   
+    margin-bottom: 5px;
+    font-weight: 500;
+    
+}
+
+
+
+#no-of-openTasks, .no-of-closedTasks{
     margin-top: 0;
    
 
 }
-.minicard--i{
-    width: 50%;
-}
 
-.minicard--i .icon{
+
+.miniCard--i .icon{
     width: 40px;
 }
+@media screen and (max-width:576px){
+    .miniCard--ii .icon{
+        width: 30px;
+        height: 30px;
+    }
+}
 
-.minicard--ii .icon{
+.miniCard--ii .icon{
     width: 50px;
     height: 50px;
 }
-.minicard--ii{
+
+.miniCard--ii{
     display: flex;
     align-items: center;
 }
-.minicard--ii .iconwrapper{
+
+
+.miniCard--ii .iconWrapper{
     border-radius: 10px;
 }
+
+
 .inline-container{
     display: flex;
     align-items: center;
     margin-right: 15px;
 }
+
 .inline-container p{
     font-size: 1.5rem;
 }
+
 .arrow--up{
     width: 10px;
     height: 10px;
@@ -196,26 +251,22 @@ padding: 1.5rem;
     fill: var(--green-container);
     margin-bottom: 17px;
 }
-#taskprcentage, #closedtaskprcentage{
+
+
+#taskPercentage, #closed-taskPercentage{
     color: var(--green-container);
     margin-top: 0;
     margin-bottom: 17px;
    
 }
-#unitoftime{
-margin-right: 38px; 
-margin-left: 0;   
-font-weight: 500;
-}
+
+
 .time-container{
     margin-right: 30px;
 }
-.timedetails{
-    margin: 5px 2px 21px 0;
-   
-}
 
-.minicard--ii .close{
+
+.miniCard--ii .close{
     width: 40px;
 }
 
