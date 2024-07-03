@@ -153,6 +153,10 @@ padding: 1.5rem;
     background-color: var(--card-color);
 }
 
+.card--medium{
+    display: flex;
+    flex-direction: column;
+}
 .card--small{
     display: flex;
     justify-content: space-between;
@@ -172,6 +176,8 @@ padding: 1.5rem;
 .darkMode .card:hover {
     background-color: #3C426B;
 }
+
+
 
 .heading{
     margin-bottom: 20px;
@@ -216,12 +222,7 @@ padding: 1.5rem;
 .miniCard--i .icon{
     width: 40px;
 }
-@media screen and (max-width:576px){
-    .miniCard--ii .icon{
-        width: 30px;
-        height: 30px;
-    }
-}
+
 
 .miniCard--ii .icon{
     width: 50px;
@@ -276,6 +277,14 @@ padding: 1.5rem;
 }
 
 
+
+@media screen and (max-width:576px){
+    .miniCard--ii .icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /*MEDIUM CARDS*/
 
 .headingContainer{
@@ -291,28 +300,17 @@ padding: 1.5rem;
     margin-top: 20px;
     flex: 1;
 }
-.inline-container .circleicon{
+.inline-container .circleIcon{
     margin: 20px 5px 20px 30px;
     width: 15px;
 }
-@media screen and (max-width: 767px){
-    .inline-container p {
-        text-wrap: nowrap;
-    }
 
-    .headingContainer .heading{
-        margin-top: 25px;
-        font-size: 2rem;
-        margin-right: 15px;
-
-    }
-}
-.starbucks, .photoshop, .project-icon{
+.starbucks, .photoShop, .project-icon{
     width: 40px;
     height: 40px;
     margin-top: 15px;
 }
-.photoshop{
+.photoShop{
     border: 2px solid #3FC3FF;
 
     border-radius: 50px;
@@ -324,10 +322,7 @@ padding: 1.5rem;
 .xd{
     border: 3px solid #E843D8;
 }
-.card--medium{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .to-do-detail{
     display: flex;
@@ -362,7 +357,7 @@ width: 40%;
 }
 
 
-.progresspercentage{
+.progress-percentage{
     display: flex;
     justify-content: space-between;
 }
@@ -375,13 +370,29 @@ width: 40%;
     margin-right: 20px;
 }
 
+
+@media screen and (max-width: 767px){
+    .inline-container p {
+        text-wrap: nowrap;
+    }
+
+    .headingContainer .heading{
+        margin-top: 25px;
+        font-size: 2rem;
+        margin-right: 15px;
+
+    }
+}
+
 /*AVATARS*/
-.avatarcontainer{
+.avatarContainer{
 margin-left: 7px;
 position: relative;
 }
+
 .pfp{
     width: 30px;
+    position: absolute;
 }
 .avatar--ii{
  position: absolute;
@@ -399,13 +410,22 @@ position: relative;
     left: 27px;
 }
 
-.avatarcontainer .circleicon{
-    margin-left: 40px;
+.avatarContainer .circleIcon{
+   margin-left:60px;
 }
 
 @media screen and (max-width:767px){
+
+    .avatarContainer{
+
+    }
      .pfp{
-        width: ;
+        width: 20px;
+     }
+
+     .avatarContainer .circleIcon{
+        width: 20px;
+        height: 20px;
      }
 }
 

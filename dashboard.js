@@ -56,7 +56,7 @@ function calculateProgress(actual, target, projectId, progressBarId) {
 document.addEventListener('DOMContentLoaded',() => {
 calculateProgress(122053,225000, 'starbucksProject', 'starbucksPercentage');
 calculateProgress(45000, 200000, 'webApplicationProject', 'webApplicationPercentage');
-calculateProgress(16, 205, 'webDesignProject', 'webDesignPercentage' );
+calculateProgress(15, 205, 'webDesignProject', 'webDesignPercentage' );
 calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 

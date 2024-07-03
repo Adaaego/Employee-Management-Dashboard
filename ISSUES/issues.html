@@ -6,31 +6,45 @@
     <link rel="stylesheet" href="issues.css">
     <title>Document</title>
 </head>
-<body  style="display: flex; justify-content: center;">
-    <div class="card card--small">
-        <div class="miniCard--i">
-                <div>
-        
-                <h3 class="heading">Time Remaining</h3>
-               </div>
-    
-            <div class="details">
-             <h2 class="time-details">231</h2>
-             <p id="unit-of-time">hours</p>
-    
-           </div>
-    
-        </div>
-
-
-        <div class="miniCard--ii">
-            <span class="iconWrapper light-container">
-                <svg class="icon">
-                    <use xlink:href="images/sprite (9).svg#alarm"></use>
-                  </svg>
-            </span>
-        </div>
+<body>
+<div class="card card--medium">
+    <div class="headingContainer">
+        <h3 class="heading">To-Do Tasks</h3>
+        <span class="inline-container">
+            <svg class="icon circleIcon">
+                <use xlink:href="images/sprite (9).svg#circle"></use>
+              </svg>
+              <p>Add Task</p>
+                </span>
        </div>
-    </div>
+   
+
+        <div class="to-do-detail">
+            <img src="images/starbucks.png" class="starbucks">
+            <div  style="margin-left: 15px;">
+                <p class="to-do-subject">Follow up on starbucks project</p>
+                <p class="to-do-date">Today, July 29,  2024</p>
+            </div>
+        </div>
+        <div class="progressdetails">
+            <div class="progress-bar to-do-progressbar green-progressBar" id="starbucksPercentage"></div>
+            <div class="progress-percentage">
+                <p class="tag">progress</p>
+                <p class=" project-percentage  to-do-percentage" id="starbucksProject">40%</p>
+            </div>
+        </div>
+
+        <div class="avatarContainer">
+            <img src="images/boy-removebg-preview.png" class="pfp">
+            <img src="images/man-removebg-preview.png"class="pfp avatar--ii">
+            <img src="images/user-removebg-preview.png" class="pfp avatar--iii">
+            <img src="images/woman-removebg-preview.png"class="pfp avatar--iv">
+            <svg class="icon circleIcon">
+                <use xlink:href="images/sprite (9).svg#circle"></use>
+              </svg>
+        </div>
+   </div>
+
+
 </body>
 </html>

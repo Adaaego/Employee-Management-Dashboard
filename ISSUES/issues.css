@@ -8,8 +8,8 @@
     --light-color : #9FA0B5;
     --icon-primary : #424957;
     --icon-sidebar : #606A79;
-    --icon-wrapperdark :#606872;
-    --icon-wrapperlight: #E7EBF0;
+    --icon-wrapper-dark :#606872;
+    --icon-wrapper-light: #E7EBF0;
     --icon-dark : #1E2732;
     --green-container : #28A745;
     --red-container : #FF3D3D;
@@ -46,9 +46,9 @@ h1,h2,h3{
 
 
 .card{
-    border: 3px solid var(--icon-wrapperlight);
+    border: 3px solid var(--icon-wrapper-light);
     box-shadow: var(--box-shadow);
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 1.4rem;
     transition: all ease 0.7s;
     cursor: pointer;
@@ -84,7 +84,7 @@ margin-top: 30px;
 .miniCard--ii{
     margin-left: 40px;
 }
-.circleicon{
+.circleIcon{
     width: 35px;
     height: 20px;
 
@@ -104,145 +104,112 @@ background-color: var(--green-container);
 }
 
 
-.redcontainer{
+.red-container{
     background-color: var(--red-container);
 }
-.lightcontainer{
-  background-color: var(--icon-wrapperlight) ;
+.light-container{
+  background-color: var(--icon-wrapper-light) ;
 }
 
-.card{
-    border: 3px solid var(--icon-wrapperlight);
-    box-shadow: 0 0 20px 10px #f3f3f3;
+
+.headingContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--border-bottom);
+}
+.headingContainer .inline-container{
+ display: flex;
+}
+.headingContainer .heading{
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    flex: 1;
+}
+.inline-container .circleIcon{
+    margin: 20px 5px 20px 30px;
+    width: 15px;
+}
+
+.inline-container p {
+    margin-top: 22px;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+}
+.starbucks, .photoShop, .project-icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+
+.to-do-detail{
+    display: flex;
+}
+.to-do-subject, .ongoing-task-subject{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.to-do-date .ongoing-task-date{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+
+.progress-bar{
+    height: 3px;
     border-radius: 25px;
-    padding: 1.4rem;
-    transition: all ease 0.7s;
-    cursor: pointer;
+    margin: 10px 0 0 7px;
+}
+.green-progressBar{
+    background-color: var(--green-container);
+}
+.red-progressBar{
+    background-color: var(--red-container);
+}
+.to-do-progressbar{
+width: 40%;
 }
 
-.profilephoto{
-    width: 20px;
-}
-
-.card-header{
+.progress-percentage{
     display: flex;
     justify-content: space-between;
 }
 
-.card-header > div:nth-child(2){
-    margin-left: 40px;
-}
-.card-header .icon{
-    margin-top: 20px;
- 
+
+.avatarContainer{
+width: 40%;
+margin-left: 7px;
+position: relative;
+display: flex;
+justify-content: space-between;
 }
 
-.card-content{
-    display: flex;
+.pfp{
+width: 30px;
+height: 30px;
 }
 
-.project-info{
-    display: flex;
-}
-
-.content-projectName{
-    font-weight: 700;
-    margin-bottom: 0;
-    margin-top: 20px;
-    margin-left: 7px;
-}
-
-.content-avatarContainer{
-    margin-left: 15px;
-    position: relative;
-}
-.pfp--ii{
+.avatar--ii{
     position: absolute;
     left: 7px;
 }
 
-.pfp--iii{
+.avatar--iii{
     position: absolute;
-    left: 15px;
+    left: 20px;
 }
 
-.pfp--iv{
+.avatar--iv{
     position: absolute;
-    left: 22px;
-}
-.content-avatarContainer .profilephoto{
-    margin-top: 10px;
+    left: 35px;
 }
 
-
-
-.companyLogo{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 50px;
-}
-.side-bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-
-
-.side-barContainer--i{
-    text-align: center;
-}
-.side-barContainer--i .icon{
-    width: 70px;
+.avatarContainer .circleIcon{
+    width: 30px;
     height: 30px;
-    fill: var(--icon-sidebar);
-    margin-bottom: 35px;
+    margin-top: 0;
 }
-
-
-
-.side-bar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--sidebar-light);
-    padding: 0.7rem 1rem;
-    border-top-left-radius: 15px;
-}
-
-.side-bar .icon{
-    width: 25px;
-    height: 25px;
-    fill: var(--icon-sidebar);
-
-}
-
-
-.log-outContainer{
-    background-color: #FF3333;
-    display: inline-flex;
-    border-radius: 7px;
-    padding: 1rem;
-}
-
-.log-outContainer .icon{
-    fill: #fff;
-}
-
-
-
-/*TABLE*/
-
-.T-header{
-    display: flex;
-    justify-content: flex-end;
-}
-
- th, td{
-    padding: 1.5rem;
-}
-
