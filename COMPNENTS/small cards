@@ -1,11 +1,11 @@
-<div class="card card--small" style="margin-left: 15px; margin-top: 30px">
-    <div class="minicard--i">
+<div class="card card--small">
+    <div class="miniCard--i">
         <h3 class="heading">Open Tasks</h3>
         <div class="details">
             <h2 id="no-of-openTasks">932</h2>
             <span class="inline-container">
                
-                <svg class="icon arrow--up">
+                <svg class=" arrow--up">
                     <use xlink:href="images/sprite (9).svg#up-right-arrow"></use>
                   </svg>
                   <p id="taskPercentage">2.3%</p>
@@ -13,26 +13,26 @@
             </span>
         </div>
     </div>
-   <div class="minicard--ii">
-       <span class="iconWrapper iconwrapper--light">
+   <div class="miniCard--ii">
+       <span class="iconWrapper iconWrapper--light">
        </svg><svg class="icon">
         <use xlink:href="images/sprite (5).svg#verified"></use></svg>
        </span>
    </div>
    </div>
    
-   <div class="card card--small" style="margin-left: 25px; margin-top: 30px">
-    <div class="minicard--i">
+   <div class="card card--small">
+    <div class="miniCard--i">
         <h3 class="heading">Time Remaining</h3>
         <div class="details">
          <h2 class="timedetails">231</h2>
        
-            <p id="unitoftime">hours</p>
+            <p id="unit-of-time">hours</p>
         
         </div>
     </div>
-    <div class="minicard--ii">
-        <span class="iconWrapper iconwrapper--light">
+    <div class="miniCard--ii">
+        <span class="iconWrapper iconWrapper--light">
             <svg class="icon">
                 <use xlink:href="images/sprite (9).svg#alarm"></use>
               </svg>
@@ -41,14 +41,14 @@
    </div>
 
 
-   <div class="card card--small" style="margin-left: 25px; margin-top: 30px">
-    <div class="minicard--i">
+   <div class="card card--small">
+    <div class="miniCard--i">
         <h3 class="heading">Closed Tasks</h3>
         <div class="details">
             <h2 class="no-of-closedTasks">268</h2>
             <span class="inline-container">
                
-                <svg class="icon arrow--up">
+                <svg class=" arrow--up">
                     <use xlink:href="images/sprite (9).svg#up-right-arrow"></use>
                   </svg>
                   <p id="closed-taskPercentage">2.3%</p>
@@ -56,8 +56,8 @@
             </span>
         </div>
     </div>
-    <div class="minicard--ii">
-        <span class="iconWrapper iconwrapper--light">
+    <div class="miniCard--ii">
+        <span class="iconWrapper iconWrapper--light">
             <svg class="icon close">
                 <use xlink:href="images/sprite (9).svg#close"></use>
               </svg>
@@ -67,18 +67,18 @@
 
 
 
-<div class="card  card--small" style="margin-left: 25px; margin-top: 30px">
-    <div class="minicard--i">
+<div class="card  card--small">
+    <div class="miniCard--i">
         <h3 class="heading">Time Spent</h3>
         <div class="details">
          <h2 class="timedetails">746</h2>
        
-            <p id="unitoftime">hours</p>
+            <p id="unit-of-time">hours</p>
         
         </div>
     </div>
-    <div class="minicard--ii">
-        <span class="iconWrapper iconwrapper--light">
+    <div class="miniCard--ii">
+        <span class="iconWrapper iconWrapper--light">
             <svg class="icon">
                 <use xlink:href="images/sprite (9).svg#timer"></use>
               </svg>
