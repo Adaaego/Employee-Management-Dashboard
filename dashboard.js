@@ -54,16 +54,16 @@ function calculateProgress(actual, target, projectId, progressBarId) {
 };
 
 document.addEventListener('DOMContentLoaded',() => {
-calculateProgress(122053,225000, 'starbucksProject', 'starbucksPercentage');
+calculateProgress(10000,225000, 'starbucksProject', 'starbucksPercentage');
 calculateProgress(45000, 200000, 'webApplicationProject', 'webApplicationPercentage');
-calculateProgress(1250, 7500 'webDesignProject', 'webDesignPercentage' );
+// calculateProgress(1250, 7500 'webDesignProject', 'webDesignPercentage' );
 calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 
 
 
 function changeTheme(){
-    let sunIcon = document.getElementById('sunicon').querySelector('use');
+    let sunIcon = document.getElementById('sun-icon').querySelector('use');
 
     document.body.classList.toggle('darkMode');
     if (document.body.classList.contains('darkMode')){
