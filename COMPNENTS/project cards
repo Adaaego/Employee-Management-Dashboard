@@ -1,6 +1,6 @@
-<div class="card" style="margin-left: 20px;">
+<div class="card"">
     <div class="heading-container">
-        <div>
+        <div class="web-application-heading-container">
             <h3 class="project--name">Web Application</h3>
             <p class="update--date">Last updated : Yesterday 10:15am</p>
         </div>
@@ -21,8 +21,8 @@
 
     <div class="project-status">
         <div>
-            <span class="wrapper redcontainer">overdue</span>
-            <span class="deadline wrapper lightcontainer">Ended : June 15, 2024</span>
+            <span class="wrapper redContainer">overdue</span>
+            <span class="deadline wrapper light-container">Ended : June 15, 2024</span>
         </div>
     
         <div class="avatar--container">
@@ -35,6 +35,7 @@
         </div>
     
 </div>
+
 
 
 <div class="card" style="margin-left: 20px;">

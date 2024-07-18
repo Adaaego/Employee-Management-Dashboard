@@ -1,4 +1,3 @@
-
 <div class="card card--medium">
     <div class="headingContainer">
         <h3 class="heading">To-Do Tasks</h3>
@@ -12,7 +11,7 @@
    
 
         <div class="to-do-detail">
-            <img src="images/starbucks.png" class="starbucks">
+            <img src="images/starbucks.png" class="starbucks" alt="projectIcon">
             <div  style="margin-left: 15px;">
                 <p class="to-do-subject">Follow up on starbucks project</p>
                 <p class="to-do-date">Today, July 29,  2024</p>
@@ -27,10 +26,10 @@
         </div>
 
         <div class="avatarContainer">
-            <img src="images/boy-removebg-preview.png" class="pfp">
-            <img src="images/man-removebg-preview.png"class="pfp avatar--ii">
-            <img src="images/user-removebg-preview.png" class="pfp avatar--iii">
-            <img src="images/woman-removebg-preview.png"class="pfp avatar--iv">
+            <img src="images/boy-removebg-preview.png" class="pfp" alt="profilePhoto">
+            <img src="images/man-removebg-preview.png"class="pfp avatar--ii" alt="profilePhoto">
+            <img src="images/user-removebg-preview.png" class="pfp avatar--iii" alt="profilePhoto">
+            <img src="images/woman-removebg-preview.png"class="pfp avatar--iv" alt="profilePhoto">
             <svg class="icon circleIcon">
                 <use xlink:href="images/sprite (9).svg#circle"></use>
               </svg>
@@ -39,7 +38,7 @@
 
 
 
-   <div class="card card--medium" style="margin-left: 15px;">
+   <div class="card card--medium"">
     <div class="headingContainer">
         <h3 class="heading">In Progress Tasks</h3>
         <span class="inline-container">

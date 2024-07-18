@@ -1,3 +1,5 @@
+//GREETING
+
 window.onload = function () {
     const greetingElement = document.getElementById ('greeting');
 
@@ -54,14 +56,14 @@ function calculateProgress(actual, target, projectId, progressBarId) {
 };
 
 document.addEventListener('DOMContentLoaded',() => {
-calculateProgress(10000,225000, 'starbucksProject', 'starbucksPercentage');
+calculateProgress(40000,225000, 'starbucksProject', 'starbucksPercentage');
 calculateProgress(45000, 200000, 'webApplicationProject', 'webApplicationPercentage');
-// calculateProgress(1250, 7500 'webDesignProject', 'webDesignPercentage' );
-calculateProgress(2680, 5200, 'logoDesignProject','logoDesignPercentage');
+calculateProgress(1250, 7500, 'webDesignProject', 'webDesignPercentage' );
+calculateProgress(503, 5200, 'logoDesignProject','logoDesignPercentage');
 });
 
 
-
+//CHANGE THEME
 function changeTheme(){
     let sunIcon = document.getElementById('sun-icon').querySelector('use');
 

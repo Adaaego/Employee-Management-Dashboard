@@ -95,12 +95,17 @@ h3{
     padding: 0.7rem 2rem;
     color: var(--wrapper-text);
 }
-
+@media screen  and (max-width:   767px){
+    .wrapper{
+        padding: 0.2rem 0.5rem;
+    }
+    
+}
 .greenContainer{
 background-color: var(--green-container);
 }
 
-.redcontainer{
+.redContainer{
     background-color: var(--red-container);
 }
 .light-container{
@@ -422,9 +427,6 @@ position: relative;
 
 @media screen and (max-width:767px){
 
-    .avatarContainer{
-
-    }
      .pfp{
         width: 20px;
      }
@@ -439,6 +441,9 @@ position: relative;
 
 .heading-container{
     display: flex;
+}
+.web-application-heading-container, .logo-design-heading-container {
+    flex: 1;
 }
 
 .heading-container .icon{
@@ -480,8 +485,13 @@ position: relative;
     align-items: center;
 }
 
-.project-status .lightcontainer{
-    color: var(--light-color);
+.project-status .light-container{
+    color: #87889F;
+}
+
+.project-status .redContainer,
+.project-status .greenContainer{
+    color: #fff;
 }
 .project--name{
     margin-bottom: 10px;
@@ -536,6 +546,14 @@ margin-bottom: 20px;
     .dateElement p{
         font-weight: 600;
         font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: 767px){
+        .project-status .avatar--container{
+            margin-left: 0;
+        }
+
+        
     }
 
     /*RECENT PROJECT CARDS */
