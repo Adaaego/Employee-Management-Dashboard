@@ -40,7 +40,7 @@ function calculateProgress(actual, target, projectId, progressBarId) {
 
 
     //updating colors of progress bars based on their percentages 
-    const progressBarElement = document.getElementById(progressBarId);
+   const progressBarElement = document.getElementById(progressBarId);
     if (progressBarElement) {
         
 

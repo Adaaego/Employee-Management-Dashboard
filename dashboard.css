@@ -30,7 +30,7 @@
     --icon-dark : #fff;
     --icon-light : #fff;
     --icon-primary : #fff;
-    --icon-wrapper-light : #DD4D84;
+    --icon-wrapper-light : #DD4D8;
     --icon-wrapperDark : #282A2D;
     --light-color : #fff;
     --primary-color : #fff;
@@ -149,7 +149,7 @@ padding: 1.5rem;
 /*CARDS*/
 
 .card{
-    border: 3px solid var(--icon-wrapper-light);
+    border: 5px solid var(--icon-wrapper-light);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
     padding: 1.4rem;
@@ -580,10 +580,12 @@ margin-bottom: 20px;
         display: flex;
         margin-top: 10px;
     }
+
     .project-details{
         display: flex;
         flex-direction: column;
         margin-left: 20px;
+        flex: 1;
     }
 
     .project-detailsContainer .wrapper{
@@ -593,6 +595,9 @@ margin-bottom: 20px;
         margin-left: 25px;
     }
 
+    .project-detailsContainer .details{
+        text-wrap: nowrap;
+    }
     .company-name{
         margin-bottom: 15px;
         margin-top: 0;
@@ -610,6 +615,22 @@ margin-bottom: 20px;
         margin-top: 0;
         font-weight: 500;
         opacity: 0.7;
+    }
+    .project-detailsContainer .line-br{
+        display: ;
+    }
+
+    @media screen and (max-width:767px){
+        .project-detailsContainer .deadline{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:581px){
+        .project-detailsContainer .line-br{
+            display: 
+        }
     }
 
 
