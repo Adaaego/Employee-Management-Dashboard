@@ -1,22 +1,23 @@
 
-    <div class="top-bar">
-        <div class="top-bar-container-i">
-            <svg class="icon">
-                <use xlink:href="images/sprite (12).svg#magnifying-glass"></use>
-              </svg> 
-              <input type="text" placeholder="what are you looking for" class="searchField" maxlength="50">
-        </div>
-  
-        <div class=" .top-bar-container-ii">
-            <svg class="icon">
-                <use xlink:href="images/sprite (11).svg#exclamation"></use>
-              </svg> 
-    
-            <svg class="icon">
-                <use xlink:href="images/sprite (13).svg#bell"></use>
-            </svg>
-    
-              <img src="images/manavatar-removebg-preview.png" alt="">
-        </div>
-
+<div class="top-bar">
+    <div class="top-bar-container-i">
+        <svg class="icon">
+            <use xlink:href="images/sprite (12).svg#magnifying-glass"></use>
+          </svg> 
+          <input type="text" placeholder="what are you looking for" class="searchField" maxlength="50">
     </div>
+
+    <div class="top-bar-container-ii">
+        <svg class="icon">
+            <use xlink:href="images/sprite (11).svg#exclamation"></use>
+          </svg> 
+
+        <svg class="icon">
+            <use xlink:href="images/sprite (12).svg#bell"></use>
+        </svg>
+
+          <img src="images/manavatar-removebg-preview.png" alt="profile-photo">
+    </div>
+
+</div>
+  
