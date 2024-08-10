@@ -640,7 +640,7 @@ margin-bottom: 20px;
     }
 
 
-    /*RECENT PROJECTS CARD*/
+    /*active PROJECTS CARD*/
 
     .card-header{
         display: flex;
@@ -869,13 +869,33 @@ margin-bottom: 20px;
     /*TABLE*/
 
 .T-header{
-    display: flex;
-    justify-content: flex-end;
+display: flex;
+justify-content: flex-end;
+padding: 1.5rem 3rem;
+width: 100;
+        
+}
+
+table{
+    width: 100%;
 }
 
  th, td{
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    
 }
+
+
+
+table td {
+    text-align: center;
+}
+
+.T-header h2 {
+    text-align: ri;
+}
+
 
 
 /*GRIDS*/
@@ -937,6 +957,10 @@ margin-bottom: 20px;
     flex-direction: column;
 }
 .project-container .card{
+    margin-top: 15px;
+}
+
+.active-project-container{
     margin-top: 15px;
 }
 
