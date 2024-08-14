@@ -46,6 +46,7 @@
 
 html{
     font-size: 62.5%; /**default HTML font size**/
+    width: 100%;
 }
 
 body{
@@ -53,6 +54,8 @@ body{
     font-family: "Public Sans", sans-serif;
     color: var(--primary-color);
     height: auto;
+    margin: 0;
+    width: 100%;
 }
 
 h1,h2,h3{
@@ -155,6 +158,7 @@ padding: 1.5rem;
     transition: all ease 0.7s;
     cursor: pointer;
     background-color: var(--card-color);
+    max-width: 100%;
 }
 
 .card--medium{
@@ -169,7 +173,7 @@ padding: 1.5rem;
 
 .card:hover{
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
-    transform: scale(1.05);
+    transform: scale(1);
 }
 
 @media screen and (max-width:768px){
@@ -584,7 +588,7 @@ margin-bottom: 20px;
 
     .project-detailsContainer{
         display: flex;
-        margin-top: 10px;
+        margin-top: 40px;
     }
 
     .project-details{
@@ -622,9 +626,9 @@ margin-bottom: 20px;
         font-weight: 500;
         opacity: 0.7;
     }
-    .project-detailsContainer .line-br{
+    /* .project-detailsContainer .line-br{
         display: ;
-    }
+    } */
 
     @media screen and (max-width:767px){
         .project-detailsContainer .deadline{
@@ -903,6 +907,7 @@ table td {
     display: grid;
     grid-template-columns: 70px 1fr; /* Sidebar takes 20% and main content takes 80% */
     height: 100%;
+    max-width: 100%;
     
   }
 
@@ -910,6 +915,7 @@ table td {
     display: flex;
     flex-direction: column;
     padding: 0.6rem 2rem;
+    width: 100%;
   }
 
   .small-card-container{
@@ -945,11 +951,13 @@ table td {
 
 .recent-project-container{
     margin-top: 15px;
+    height: 275px;
 
 }
 
 .recent-project-container .card{
     width: 100%;
+    height: 100%;
 }
 
 .project-container{
