@@ -10,7 +10,7 @@
 
 <body>
 
-<div class="container" style="margin: 0;">
+<div class="container">
     <div class="side-bar-container">
 
         <div class="side-bar">
@@ -101,9 +101,14 @@
         </svg>
 
           <img src="images/manavatar-removebg-preview.png" alt="profile-photo">
+
+          <svg class="icon"  id="sun-icon"  onclick="changeTheme()">
+            <use id="icon-use" xlink:href="images/sprite (10).svg#sun (1)"></use>
+          </svg>
     </div>
 
 </div>
+
 <div>
     <h1>Dashboard</h1>
 </div>
@@ -112,7 +117,7 @@
 
 <div class="small-card-container">
 
-    <div class="card card--small">
+    <div class="card card--small yellow-card">
         <div class="miniCard--i">
             <h2 class="heading">Open Tasks</h2>
             <div class="details">
@@ -135,7 +140,7 @@
        </div>
        </div> 
 
-       <div class="card card--small">
+       <div class="card card--small blue-card">
         <div class="miniCard--i">
             <h2 class="heading">Time Remaining</h2>
             <div class="details">
@@ -155,7 +160,7 @@
        </div>
 
 
-       <div class="card card--small">
+       <div class="card card--small green-card">
         <div class="miniCard--i">
             <h2 class="heading">Closed Tasks</h2>
             <div class="details">
@@ -179,7 +184,7 @@
         </div>
     </div>
 
-    <div class="card  card--small">
+    <div class="card  card--small brown-card">
         <div class="miniCard--i">
             <h2 class="heading">Time Spent</h2>
             <div class="details">

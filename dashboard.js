@@ -76,6 +76,31 @@ function changeTheme(){
         sunIcon.setAttribute('href', 'images/sprite (10).svg#sun (1)');
     }
 
+
+    // Check if darkMode class is applied
+    const isDarkMode = document.body.classList.contains('darkMode');
+
+    const smallCards = document.querySelectorAll('.card--small');
+    const mediumCard = document.querySelectorAll('.card--medium')
+    smallCards.forEach(card => {
+        card.querySelectorAll('h2, h3, p').forEach(element => {
+            if (isDarkMode) {
+                element.style.color = '#000';  // White text for dark mode
+            } else {
+                element.style.color = '#000';  // Black text for light mode
+            }
+        });
+
+        card.style.pointerEvents = isDarkMode ? 'none' : '';  // Disables hover interaction in dark mode
+    });
+
+    mediumCard.forEach(medCard => {
+        if(isDarkMode) {
+            medCard.style.borderBottom = 'none';
+        }
+    })
+
 }
+
 
 

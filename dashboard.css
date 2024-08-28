@@ -9,7 +9,7 @@
     --green-container : #28A745;
     --icon-dark : #1E2732;
     --icon-light : #000;
-    --icon-primary : #424957;
+    --icon-primary : #000;
     --icon-sidebar : #606A79;
     --icon-wrapper-light: #E7EBF0;
     --icon-wrapperDark :#606872;
@@ -20,22 +20,39 @@
     --sidebar-light : #0D1216;
     --wrapper-text : #9192A8;
     --border-bottom: 1px solid #E7EBF0;
+    --top-bar :#fff;
+    --icon-small-card : #000;
+    --light-container: #eaeaf8;
 
 }
 
 .darkMode{
-    --bg-color :#131415;
+    --bg-color : #090d19;
     --box-shadow : none;
-    --card-color : #282A2D;
+    --card-color : #161c2c;
     --icon-dark : #fff;
-    --icon-light : #fff;
+    --icon-light : #000;
     --icon-primary : #fff;
+    --icon-sidebar : #fff;
     --icon-wrapper-light : #DD4D8;
     --icon-wrapperDark : #282A2D;
     --light-color : #fff;
     --primary-color : #fff;
     --secondary-color : #585A5B;
-    --wrapper-text : #fff;
+    --sidebar-light : #161c2c;
+    --wrapper-text : #9192ab;
+    --border-bottom : none;
+    --top-bar : #fff;
+    --yellow-card : #fdba16;
+    --blue-card : #53a4df;
+    --green-card : #88c176;
+    --brown-card : #bc8a5e;
+    --icon-small-card : #000;
+
+
+}
+.darkMode .headingContainer{
+    border-bottom: none;
 }
 
 *, *::before, *::after{
@@ -112,7 +129,7 @@ background-color: var(--green-container);
     background-color: var(--red-container);
 }
 .light-container{
-  background-color: var(--icon-wrapper-light) ;
+  background-color:var(--light-container);
 }
 
 
@@ -165,10 +182,20 @@ padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
+.card--medium .light-container{
+
+}
+.card .icon{
+    fill: var(--icon-primary);
+}
 .card--small{
     display: flex;
     justify-content: space-between;
     padding: 0.2rem 1rem;
+}
+
+.card--small .icon{
+ fill: var(--icon-small-card);
 }
 
 .card:hover{
@@ -183,11 +210,26 @@ padding: 1.5rem;
 }
 
 .darkMode .card:hover {
-    background-color: #3C426B;
+    background-color: none;
+    transform: scale(1);
 }
 
 
+.yellow-card{
+    background-color: var(--yellow-card);
+}
 
+.blue-card{
+    background-color: var(--blue-card);
+}
+
+.green-card{
+    background-color: var(--green-card);
+}
+
+.brown-card{
+    background-color: var(--brown-card);
+}
 .heading{
     margin-bottom: 20px;
     margin-top: 10px;
@@ -294,7 +336,7 @@ padding: 1.5rem;
 
 
 .miniCard--ii .close{
-    width: 40px;
+    width: 30px;
 }
 
 
@@ -713,6 +755,9 @@ margin-bottom: 20px;
     .deadline-status{
         display: flex;
     }
+    .deadline-status span{
+        text-wrap: nowrap;
+    }
 
     .deadline-status .wrapper{
         height: 30px;
@@ -804,7 +849,14 @@ margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--top-bar);
+        width: 100%;
+        padding: 2rem;
+        border-radius: 7px;
+        margin-top: 10px;
     }
+
+
 
     .top-bar  img{
         width: 40px;
@@ -845,9 +897,14 @@ margin-bottom: 20px;
       
     
     .top-bar-container-ii .icon{
-        margin-right: 40px;
+        margin-right: 30px;
         margin-left: 0;
 
+    }
+
+    .top-bar-container-ii #sun-icon{
+        margin-right: 0;
+        margin-left: 30px;
     }
 
     @media screen and (max-width: 767px){
@@ -905,9 +962,10 @@ table td {
 /*GRIDS*/
 .container {
     display: grid;
-    grid-template-columns: 70px 1fr; /* Sidebar takes 20% and main content takes 80% */
+    grid-template-columns: 4% 1fr; /* Sidebar takes 20% and main content takes 80% */
     height: 100%;
     max-width: 100%;
+    background-color: var(--bg-color);
     
   }
 
@@ -927,19 +985,20 @@ table td {
   }
 
   .lower-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 65% 35%;
     width: 100%;
     height: 100%;
     margin-top: 20px;
   }
 
   .first-container{
-    width: 65%;
+    width: ;
     height: 100%;
   }
 .second-container{
     height: 100%;
-    width: 35%;
+    width: ;
     margin-left: 15px;
 }
 
@@ -972,5 +1031,8 @@ table td {
     margin-top: 15px;
 }
 
+.lower-container{
+
+}
 
    
