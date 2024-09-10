@@ -993,12 +993,10 @@ table td {
   }
 
   .first-container{
-    width: ;
     height: 100%;
   }
 .second-container{
     height: 100%;
-    width: ;
     margin-left: 15px;
 }
 
@@ -1030,7 +1028,24 @@ table td {
 .active-project-container{
     margin-top: 15px;
 }
-
+@media screen and (max-width: 1420px){
+    .container{
+        display: grid;
+    }
+    /* .lower-container{
+        grid-template-columns: 60%  40% ;
+    } */
+    /* .task-container{
+        display: flex;
+        flex-direction: column;
+    } */
+    .side-bar-container{
+        display: none;
+    }
+    .main-content{
+        width: 100vw;
+    }
+}
 .lower-container{
 
 }
