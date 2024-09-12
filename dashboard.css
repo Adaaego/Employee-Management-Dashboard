@@ -1032,22 +1032,29 @@ table td {
     .container{
         display: grid;
     }
-    /* .lower-container{
-        grid-template-columns: 60%  40% ;
-    } */
-    /* .task-container{
+     .lower-container{
+        grid-template-columns: 60%  40%;
+    } 
+    .task-container{
         display: flex;
         flex-direction: column;
-    } */
+    } 
     .side-bar-container{
         display: none;
     }
     .main-content{
         width: 100vw;
     }
+    .task-container .in-progress-task{
+        margin-top: 15px;
+    }
+    .recent-project-container {
+        grid-column: span 2;
+        width: 100vw;
+        padding: 0 3.8rem 0 0;
+        
+    }
 }
-.lower-container{
 
-}
 
    
