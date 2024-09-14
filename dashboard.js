@@ -102,5 +102,17 @@ function changeTheme(){
 
 }
 
+function openSideBar(){
+    let menu = document.getElementById('menu').querySelector('use');
+
+  if(menu.getAttribute('href') === 'images/sprite (13).svg#menu'){
+    menu.setAttribute('href', 'images/sprite (13).svg#x-menu' )
+  }
+  else{
+    menu.setAttribute('href', 'images/sprite (13).svg#menu' )
+  }
+    
+}
+
 
 
