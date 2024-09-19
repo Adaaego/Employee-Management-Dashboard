@@ -1088,7 +1088,7 @@ table td {
     }
 }
 @media screen and (max-width: 835px){
-    .small-card-container{
+    .small-card-container .card--small{
         display: none;
     }
 }
@@ -1100,17 +1100,61 @@ table td {
 }
 
 .responseTime{
-    font-size: 3.5rem;
-    margin-bottom: 0;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    margin-top: 2px;
 }
 
-/* .responseTime-info .icon{
-    fill: #000000;
-    width: 250px;
-    height: 250px;
-} */
+.responseTime-info {
+    display: flex;
+
+}
+.responseTime-info .icon{
+    margin: 0;
+    width: 15px;
+    fill: #fff;
+    
+}
+.responseTime-info .wrapper{
+    background-color: var(--green-container);
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+.responseTime-info .icon-tag{
+    color: #fff;
+    margin-left: 5px;
+}
 
 
 
+.integration-icon-container .wrapper{
+    border-radius: 70px;
+    padding : 10px;
+    border:  2px solid var(--icon-wrapper-light);
+    display: inline-flex;
+    justify-content: center;
+}
 
-   
+.integration-card{
+    display: none;
+}
+
+@media screen and (max-width: 835px){
+    .small-card-container{
+        display: grid;
+        width: 100%;
+    }
+    .integration-card{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .responseTime-info .wrapper{
+        padding: 0.2rem 1.5rem;
+    }
+}
