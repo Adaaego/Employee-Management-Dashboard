@@ -11,6 +11,7 @@
     --icon-wrapper-light: #E7EBF0;
     --bg-btn: #fff;
     --bg-role:#e5e7eb;
+    --login-btn: #23a8df;
 
 
 
@@ -32,16 +33,17 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: "Public Sans", sans-serif;
+    transition: all 0.3s ease, color 0.3s ease;
+    font-family: "inter", sans-serif;
     color: var(--primary-color);
 
 
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-color);
     transition: background-color 0.3s ease;
 
@@ -67,11 +69,13 @@ body{
 }
 
 /*form styling */
+
 .login-details{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem 1rem;
+    height: 100vh;
 }
 form{
     background-color: var(--card-color);
@@ -100,7 +104,7 @@ form{
     font-size: 1rem;
     flex-grow: 1;
     color: var(--primary-color);
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 .role-btn.selected{
     background-color: var(--bg-btn) ;
@@ -109,3 +113,57 @@ form{
     border-radius: 5px;
     text-align: center;
 }
+
+.input-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.input-container{
+    margin-top: 30px;
+    display: flex;
+    padding: 0.3rem;
+}
+
+.input-field{
+    flex-grow: 1;
+    outline: 0;
+    border: none;
+    background: transparent;
+}
+.input-field::placeholder {
+    color: var(--primary-color);
+  }
+  
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  
+  .options a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+
+  .login-button{
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--login-btn);
+    border: none;
+    border-radius: 2px;
+    padding: 0.6rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  

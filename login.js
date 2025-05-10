@@ -33,5 +33,18 @@
              selectedRole = clicked.dataset.role;
         }
 
-    })
+    });
+
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+        e.preventDefault(); 
+
+        const loginBtn = document.querySelector(".login-button");
+         loginBtn.textContent = "Logging in...";
+         loginBtn.disabled = true;
+       
+        setTimeout(() => {
+            window.location.href = "index.html";
+          }, 10000);
+      });
+      
 
