@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" alt="company logo" class="logo">
+
+            <svg class="icon" id="sun-icon" onclick="changeTheme()">
+                <use id="icon-use" xlink:href="images/sprite (10).svg#sun (1)"></use>
+            </svg>
+        </div>
+    </div>
+
+    <script>
+        //change theme
+        function changeTheme() {
+            let sunIcon = document.getElementById('sun-icon').querySelector('use');
+
+            // Toggle dark mode class on body
+            document.body.classList.toggle('darkMode');
+
+            if (document.body.classList.contains('darkMode')) {
+                sunIcon.setAttribute('xlink:href', 'images/sprite (10).svg#moon (1)');
+            } else {
+                sunIcon.setAttribute('xlink:href', 'images/sprite (10).svg#sun (1)');
+            }
+        }
+    </script>
+</body>
+</html>

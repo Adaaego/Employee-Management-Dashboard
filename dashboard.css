@@ -73,6 +73,8 @@ body{
     height: auto;
     margin: 0;
     width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 h1,h2,h3{
@@ -109,6 +111,10 @@ h3{
 }
 
 /*CONTAINERS*/
+.container{
+    transition: background-color 0.3s ease;
+
+}
 .wrapper{
     border-radius: 15px;
     font-weight: 500;
@@ -139,6 +145,8 @@ background-color: var(--green-container);
     width: 25px;
     height: 25px;
     fill: var(--icon-light);
+
+
 }
 
 @media screen and (max-width:576px){
@@ -1049,6 +1057,8 @@ table td {
     }
     .menu{
         display: block;
+        transition: transform 0.3s ease;
+
     }
     .main-content{
         width: 100vw;
