@@ -10,8 +10,8 @@
     --icon-light : #000;
     --icon-wrapper-light: #E7EBF0;
     --bg-btn: #fff;
-    --bg-role:#e5e7eb;
-    --login-btn: #23a8df;
+    --bg-role:#deebff;
+    --login-btn: #0e7efb;
 
 
 
@@ -43,9 +43,10 @@ body{
 }
 
 .container{
-    height: 100%;
+    height: 100vh;
     background-color: var(--bg-color);
     transition: background-color 0.3s ease;
+    display: flex;
 
 }
 
@@ -72,21 +73,78 @@ body{
 
 .login-details{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 3rem 1rem;
     height: 100vh;
+    width: 100%;
 }
+
+
+ .form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-illustration{
+    width: 650px;
+    height: 800px;
+}
+.form-container{
+    /* width: 100%; */
+}
+
 form{
     background-color: var(--card-color);
-    width: 65%;
+    width: 400px;
     border: 2px solid var(--icon-wrapper-light);
     border-radius: 10px;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    margin-top: 50px;
 
-    
 
 }
+/*media query*/
+@media screen and (max-width:1195px){
+ .login-details{
+    justify-content: center;
+    align-items: center;
+ }
+ .img-container{
+    display: none;
+ }
+ form{
+    min-width: 40%;
+   
+ }
+}
+
+@media (max-width: 567px){
+    .login-details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        height: 100vh;
+    }
+  
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+  }
+  
 .heading{
     text-align: center;
 }

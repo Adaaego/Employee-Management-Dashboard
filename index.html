@@ -10,48 +10,50 @@
     <div class="container">
         <div class="header">
             <img src="images/logo.png" alt="company logo" class="logo">
+ </div>
 
-            <svg class="icon" id="sun-icon" onclick="changeTheme()">
-                <use id="icon-use" xlink:href="images/sprite (10).svg#sun (1)"></use>
-            </svg>
-        </div>
+ <div class="login-details">
+    <div class="img-container">
+        <img src="images/security.png" class="login-illustration">
+    </div>
+    <div class="form-container">
+        <form id="login-form">
+            <div class="heading">
+                <h1>Welcome, <br> Please authorize</h1>
+            </div>
+            
+            <div class="role-selector">
+                <button type="button" class="role-btn selected" data-role="user">User</button>
+                <button type="button" class="role-btn" data-role="admin">Admin</button>
+            </div>
+            <div class="input-container">
+                <img src="images/mail.png" class="input-icon" alt="email icon" />
+                <input type="email" placeholder="Email" class="input-field" />
+              </div>
 
-        <div class="login-details">
-            <form id="login-form">
-                <div class="heading">
-                    <h1>Welcome, <br> Please authorize</h1>
-                </div>
-                
-                <div class="role-selector">
-                    <button type="button" class="role-btn selected" data-role="user">User</button>
-                    <button type="button" class="role-btn" data-role="admin">Admin</button>
-                </div>
-                <div class="input-container">
-                    <img src="images/mail.png" class="input-icon" alt="email icon" />
-                    <input type="email" placeholder="Email" class="input-field" />
-                  </div>
+              <div class="input-container">
+                <img src="images/locked-computer.png" class="input-icon" alt="email icon" />
+                <input type="password" placeholder="password" class="input-field" />
+              </div>
 
-                  <div class="input-container">
-                    <img src="images/locked-computer.png" class="input-icon" alt="email icon" />
-                    <input type="password" placeholder="password" class="input-field" />
-                  </div>
+              <div class="options">
+                <label>
+                  <input type="checkbox" id="remember-me" />
+                  Remember me
+                </label>
+              
+                <a href="#" id="forgot-password">Forgot Password?</a>
+              </div>
+              <button type="submit" class="login-button">Login</button>
 
-                  <div class="options">
-                    <label>
-                      <input type="checkbox" id="remember-me" />
-                      Remember me
-                    </label>
-                  
-                    <a href="#" id="forgot-password">Forgot Password?</a>
-                  </div>
-                  <button type="submit" class="login-button">Login</button>
+              
+            
+        </form>
 
-                  
-                
-            </form>
+    </div>
+    
 
-        </div>
-
+</div>
     </div>
 
     <script src="login.js">
