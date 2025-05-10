@@ -8,6 +8,10 @@
     --card-color : #fff;
     --primary-color: #000000;
     --icon-light : #000;
+    --icon-wrapper-light: #E7EBF0;
+    --bg-btn: #fff;
+    --bg-role:#e5e7eb;
+
 
 
 }
@@ -18,8 +22,9 @@
     --card-color : #161c2c;
     --primary-color: #fff;
     --icon-light : #fff;
-
-
+    --icon-wrapper-light : #DD4D8;
+    --bg-btn: #2a3749;
+    --bg-role: transparent;
 
 }
 *, *::before, *::after{
@@ -29,6 +34,9 @@
 }
 body{
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Public Sans", sans-serif;
+    color: var(--primary-color);
+
 
 }
 
@@ -56,4 +64,48 @@ body{
     height: 45px;
     fill: var(--icon-light);
     transition: transform 0.3s ease;
+}
+
+/*form styling */
+.login-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+form{
+    background-color: var(--card-color);
+    width: 65%;
+    border: 2px solid var(--icon-wrapper-light);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+
+    
+
+}
+.heading{
+    text-align: center;
+}
+.role-selector{
+    background-color:var(--bg-role) ;
+    display: flex;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+.role-btn{
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    flex-grow: 1;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.role-btn.selected{
+    background-color: var(--bg-btn) ;
+    height: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    text-align: center;
 }

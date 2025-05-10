@@ -15,22 +15,22 @@
                 <use id="icon-use" xlink:href="images/sprite (10).svg#sun (1)"></use>
             </svg>
         </div>
+
+        <div class="login-details">
+            <form action="submit">
+                <div class="heading">
+                    <h1>Welcome, <br> Please authorize</h1>
+                </div>
+                
+                <div class="role-selector">
+                    <button type="button" class="role-btn selected" data-role="user">User</button>
+                    <button type="button" class="role-btn" data-role="admin">Admin</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <script>
-        //change theme
-        function changeTheme() {
-            let sunIcon = document.getElementById('sun-icon').querySelector('use');
-
-            // Toggle dark mode class on body
-            document.body.classList.toggle('darkMode');
-
-            if (document.body.classList.contains('darkMode')) {
-                sunIcon.setAttribute('xlink:href', 'images/sprite (10).svg#moon (1)');
-            } else {
-                sunIcon.setAttribute('xlink:href', 'images/sprite (10).svg#sun (1)');
-            }
-        }
+    <script src="login.js">
     </script>
 </body>
 </html>
