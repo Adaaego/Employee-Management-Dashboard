@@ -47,6 +47,8 @@ body{
     background-color: var(--bg-color);
     transition: background-color 0.3s ease;
     display: flex;
+    width: 100%;
+    flex-direction: column;
 
 }
 
@@ -92,9 +94,6 @@ body{
     width: 650px;
     height: 800px;
 }
-.form-container{
-    /* width: 100%; */
-}
 
 form{
     background-color: var(--card-color);
@@ -106,44 +105,7 @@ form{
 
 
 }
-/*media query*/
-@media screen and (max-width:1195px){
- .login-details{
-    justify-content: center;
-    align-items: center;
- }
- .img-container{
-    display: none;
- }
- form{
-    min-width: 40%;
-   
- }
-}
-
-@media (max-width: 567px){
-    .login-details {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 1rem;
-        height: 100vh;
-    }
   
-    .form-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    form {
-        width: 100%;
-        max-width: 400px;
-    }
-  }
   
 .heading{
     text-align: center;
@@ -224,4 +186,58 @@ form{
     color: #fff;
     font-weight: bold;
   }
+
+  /*media query*/
+@media screen and (max-width:1195px){
+    .login-details{
+       justify-content: center;
+       align-items: center;
+    }
+    .img-container{
+       display: none;
+    }
+    
+   
+   }
+   @media screen and (max-width:768px){
+   
+   }
+   
+   @media (max-width: 567px){
+       .login-details {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 2rem 1rem;
+       }
+     
+       .form-container {
+         width: 100%;
+         max-width: 400px;
+         padding: 0 1rem;
+         display: flex;
+         justify-content: center;
+       }
+     
+       form {
+         width: 100%;
+         max-width: 400px;
+         margin: 0 auto;
+       }
+       h1{font-size: 1.2rem;
+       }
+   
+       .input-icon{
+           width: 15px;
+           height: 15px;
+       }
+       .options{
+        font-size: 0.75rem;
+       }
+       .icon{
+        width: 35px;
+        height: 35px;
+        margin-top: 20px;
+       }
+     }
   
