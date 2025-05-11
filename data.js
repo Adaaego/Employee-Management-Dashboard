@@ -139,12 +139,12 @@ const employees = [
       password: "user123" 
     },
     { 
-      firstName: "Lily", 
-      lastName: "Martin", 
+      firstName: "Chinyere", 
+      lastName: "Kalu", 
       sex: "Female", 
       accountType: "user", 
-      email: "lily@aox.com", 
-      password: "user123" 
+      email: "chichiwiththecake@gmail.com", 
+      password: "0000google" 
     }
   ];
   
