@@ -6,7 +6,8 @@ const employees = [
       sex: "Male", 
       accountType: "admin", 
       email: "maxwellfa.admin@aox.com", 
-      password: "admin123" 
+      password: "admin123",
+      profile_picture: "images/boy-removebg-preview.png"
     },
     { 
       firstName: "Sara", 
@@ -14,7 +15,8 @@ const employees = [
       sex: "Female", 
       accountType: "admin", 
       email: "saraliu.admin@aox.com", 
-      password: "admin123" 
+      password: "admin123",
+      profile_picture: "images/woman-removebg-preview.png"
     },
     { 
       firstName: "James", 
@@ -22,7 +24,8 @@ const employees = [
       sex: "Male", 
       accountType: "admin", 
       email: "jamesd.admin@aox.com", 
-      password: "admin123" 
+      password: "admin123",
+      profile_picture: "images/man-removebg-preview.png"
     },
     { 
       firstName: "Emily", 
@@ -30,7 +33,8 @@ const employees = [
       sex: "Female", 
       accountType: "admin", 
       email: "emilysmith.admin@aox.com", 
-      password: "admin123" 
+      password: "admin123",
+      profile_picture: "images/woman__2_-removebg-preview.png"
     },
   
     // Users
@@ -40,7 +44,8 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "john@aox.com", 
-      password: "user123" 
+      password: "user123" ,
+      profile_picture: "images/manavatar-removebg-preview.png"
     },
     { 
       firstName: "Jane", 
@@ -48,7 +53,8 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "jane@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/woman__1_-removebg-preview.png", 
     },
     { 
       firstName: "Lucas", 
@@ -56,7 +62,8 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "lucas@aox.com", 
-      password: "user123" 
+      password: "user123" ,
+      profile_picture: "images/manavatar-removebg-preview.png",
     },
     { 
       firstName: "Olivia", 
@@ -64,7 +71,8 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "olivia@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/woman__1_-removebg-preview.png" ,
     },
     { 
       firstName: "Liam", 
@@ -72,7 +80,8 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "liam@aox.com", 
-      password: "user123" 
+      password: "user123",
+       profile_picture: "images/boy-removebg-preview.png"
     },
     { 
       firstName: "Sophia", 
@@ -80,7 +89,9 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "sophia@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/woman-removebg-preview.png"
+
     },
     { 
       firstName: "Ethan", 
@@ -88,7 +99,9 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "ethan@aox.com", 
-      password: "user123" 
+      password: "user123", 
+     profile_picture: "images/man-removebg-preview.png"
+
     },
     { 
       firstName: "Mia", 
@@ -96,15 +109,19 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "mia@aox.com", 
-      password: "user123" 
-    },
+      password: "user123" ,
+      profile_picture: "images/woman__2_-removebg-preview.png"
+
+    }
     { 
       firstName: "Aiden", 
       lastName: "Anderson", 
       sex: "Male", 
       accountType: "user", 
       email: "aiden@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/manavatar-removebg-preview.png",
+
     },
     { 
       firstName: "Charlotte", 
@@ -112,7 +129,9 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "charlotte@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/woman-removebg-preview.png"
+
     },
     { 
       firstName: "Benjamin", 
@@ -120,7 +139,10 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "benjamin@aox.com", 
-      password: "user123" 
+      password: "user123" ,
+      profile_picture: "images/boy-removebg-preview.png"
+
+
     },
     { 
       firstName: "Amelia", 
@@ -128,7 +150,9 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "amelia@aox.com", 
-      password: "user123" 
+      password: "user123" ,
+      profile_picture:"images/boy-removebg-preview.png"
+      
     },
     { 
       firstName: "William", 
@@ -136,7 +160,10 @@ const employees = [
       sex: "Male", 
       accountType: "user", 
       email: "william@aox.com", 
-      password: "user123" 
+      password: "user123",
+      profile_picture: "images/manavatar-removebg-preview.png"
+
+
     },
     { 
       firstName: "Chinyere", 
@@ -144,7 +171,9 @@ const employees = [
       sex: "Female", 
       accountType: "user", 
       email: "chichiwiththecake@gmail.com", 
-      password: "0000google" 
+      password: "0000google",
+      profile_picture: "images/woman__2_-removebg-preview.png"
+
     }
   ];
   
