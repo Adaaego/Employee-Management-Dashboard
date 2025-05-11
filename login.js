@@ -13,38 +13,52 @@
 }
 
 //function to select role
-    let selectedRole = '';
+let selectedRole = 'user'; // default to user
 
-    //listen for click events in the role sector container 
-    document.querySelector('.role-selector').addEventListener("click", e =>{
-        const clicked = e.target;
-        
+// Step 1: Listen for role selection
+document.querySelector('.role-selector').addEventListener("click", e => {
+    const clicked = e.target;
 
-        if(clicked.classList.contains("role-btn")){
-            //remove the selected class from all users by default
-            document.querySelectorAll(".role-btn").forEach(btn =>
-                btn.classList.remove("selected")
-             );
-             
-             //add selected class to the clicked button
-             clicked.classList.add("selected");
+    if (clicked.classList.contains("role-btn")) {
+        // Remove 'selected' class from all buttons
+        document.querySelectorAll(".role-btn").forEach(btn =>
+            btn.classList.remove("selected")
+        );
 
-             //save the clicked role 
-             selectedRole = clicked.dataset.role;
-        }
+        // Add it to the clicked one
+        clicked.classList.add("selected");
 
-    });
+        // Save selected role ('admin' or 'user')
+        selectedRole = clicked.dataset.role;
+    }
+});
 
-    document.getElementById("login-form").addEventListener("submit", function (e) {
-        e.preventDefault(); 
+// Step 2: Handle form submission
+document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        const loginBtn = document.querySelector(".login-button");
-         loginBtn.textContent = "Logging in...";
-         loginBtn.disabled = true;
-       
-        setTimeout(() => {
+    const emailInput = document.querySelectorAll(".input-field")[0].value.trim().toLowerCase();
+    const passwordInput = document.querySelectorAll(".input-field")[1].value;
+
+    const loginBtn = document.querySelector(".login-button");
+    loginBtn.textContent = "Logging in...";
+    loginBtn.disabled = true;
+
+    // Step 3: Check if any employee matches email, password, and selected role
+    const matchedUser = employees.find(emp =>
+        emp.email === emailInput &&
+        emp.password === passwordInput &&
+        emp.accountType === selectedRole
+    );
+
+    setTimeout(() => {
+        if (matchedUser) {
+            alert(`Welcome, ${matchedUser.firstName}!`);
             window.location.href = "dashboard.html";
-          }, 10000);
-      });
-      
-
+        } else {
+            alert("Invalid credentials or wrong role selected.");
+            loginBtn.textContent = "Login";
+            loginBtn.disabled = false;
+        }
+    }, 1000);
+});
