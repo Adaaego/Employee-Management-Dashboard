@@ -38,6 +38,7 @@ body{
     transition: all 0.3s ease, color 0.3s ease;
     font-family: "inter", sans-serif;
     color: var(--primary-color);
+    opacity: 1;
 
 
 }
@@ -240,4 +241,10 @@ form{
         margin-top: 20px;
        }
      }
+
+     .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+      }
+      
   

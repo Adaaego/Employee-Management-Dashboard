@@ -13,7 +13,7 @@
 }
 
 //function to select role
-let selectedRole = 'user'; // default to user
+let selectedRole = ''; // default to user
 
 // Step 1: Listen for role selection
 document.querySelector('.role-selector').addEventListener("click", e => {
@@ -42,7 +42,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
     const loginBtn = document.querySelector(".login-button");
     loginBtn.textContent = "Logging in...";
-    loginBtn.disabled = true;
+    loginBtn.disabled = false;
 
     // Step 3: Check if any employee matches email, password, and selected role
     const matchedUser = employees.find(emp =>
@@ -53,9 +53,12 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
     setTimeout(() => {
         if (matchedUser) {
-            alert(`Welcome, ${matchedUser.firstName}!`);
-            window.location.href = "dashboard.html";
-        } else {
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+                window.location.href = "dashboard.html";
+              }, 500); 
+            }
+        else {
             alert("Invalid credentials or wrong role selected.");
             loginBtn.textContent = "Login";
             loginBtn.disabled = false;

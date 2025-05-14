@@ -112,7 +112,7 @@ const employees = [
       password: "user123" ,
       profile_picture: "images/woman__2_-removebg-preview.png"
 
-    }
+    },
     { 
       firstName: "Aiden", 
       lastName: "Anderson", 
